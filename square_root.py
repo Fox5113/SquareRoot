@@ -26,13 +26,17 @@ def sqrt(x):
 
 
 def sqroot(number, eps):
-    a = float(number)
-    x0 = 0
-    x1 = a
-    while abs(x0 - x1) > eps:
-        x0 = x1
-        x1 = 0.5 * (x1 + a / x1)
-    return x1
+    if (number >= 0):
+
+        a = float(number)
+        x0 = 0
+        x1 = a
+        while abs(x0 - x1) > eps:
+            x0 = x1
+            x1 = 0.5 * (x1 + a / x1)
+        return x1
+    else:
+        return "ValueError: math domain error"
 
 
 if __name__ == '__main__':
