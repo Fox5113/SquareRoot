@@ -41,15 +41,14 @@ def sqroot(number, eps):
 
 if __name__ == '__main__':
 
-    _sqrt =  input(">>>")
+    _sqrt =  float(input(">>>"))
     #s = (2)
 
     #x = 1.0
     #while abs(x * x - s) > 0.000000001:
     #    x = (x * x + s) / 2. / x
-    
 
-    print(sqroot(_sqrt, 0.0000000000001))
+    print(str(sqroot(_sqrt, 0.00000000000001)))
     #print(sqroot(2,0.001))
     #print(Decimal(x))
 
